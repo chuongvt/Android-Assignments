@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">PowerGenerator</string>
+    <string name="text5">5</string>
+    <string name="text2">2</string>
+    <string name="text3">3</string>
+    <string name="text4">4</string>
+    <string name="button2">=</string>
+    <string name="answer5">1.00</string>
+    <string name="button5">=</string>
+    <string name="button4">=</string>
+    <string name="button3">=</string>
+    <string name="answer2">1.00</string>
+    <string name="answer3">1.00</string>
+    <string name="answer4">1.00</string>
+    <string name="editExp2">exp</string>
+    <string name="editExp3">exp</string>
+    <string name="editExp4">exp</string>
+    <string name="editExp5">exp</string>
+    <string name="noinput2" />
+
+</resources>
