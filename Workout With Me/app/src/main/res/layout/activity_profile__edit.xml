@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayback"
+    tools:context=".Profile_Edit">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:padding="10dp" />
+
+    <ImageView
+        android:id="@+id/Profile_img"
+        android:layout_width="136dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <EditText
+        android:id="@+id/Name_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        android:background="@drawable/roundtext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Profile_img" />
+
+    <EditText
+        android:id="@+id/Bio_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Biography"
+        android:background="@drawable/roundtext"
+        android:inputType="textMultiLine"
+        android:maxLength="150"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Major_editText" />
+
+    <EditText
+        android:id="@+id/Year_editText"
+        android:layout_width="87dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Yr"
+        android:background="@drawable/roundtext"
+        android:inputType="text"
+        android:maxLength="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name_editText" />
+
+    <EditText
+        android:id="@+id/Major_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Major"
+        android:background="@drawable/roundtext"
+        android:inputType="text"
+        android:maxLength="20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Year_editText" />
+
+    <EditText
+        android:id="@+id/Interests_editText"
+        android:layout_width="216dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:background="@drawable/roundtext"
+        android:hint="Interests"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Bio_editText" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="88dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/roundbutton"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toEndOf="@+id/Interests_ListView"
+        app:layout_constraintTop_toBottomOf="@+id/addInterests_Button"
+        app:layout_constraintVertical_bias="0.986" />
+
+    <Button
+        android:id="@+id/addInterests_Button"
+        android:layout_width="87dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="392dp"
+        android:background="@drawable/roundbutton"
+        android:text="Add Interest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toEndOf="@+id/Interests_editText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/Interests_ListView"
+        style="@style/Widget.AppCompat.Light.ListView.DropDown"
+        android:layout_width="214dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:maxLength="20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Interests_editText" />
+
+    <Button
+        android:id="@+id/buttonUpload"
+        android:layout_width="88dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/roundbutton"
+        android:text="Upload"
+        app:layout_constraintBottom_toTopOf="@+id/addInterests_Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toEndOf="@+id/Profile_img"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.415" />
+
+    <ScrollView
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="455dp"
+        android:layout_marginEnd="328dp"
+        android:layout_marginRight="328dp"
+        android:scrollbarStyle="outsideOverlay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

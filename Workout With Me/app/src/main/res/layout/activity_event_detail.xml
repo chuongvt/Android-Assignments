@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayback"
+    tools:context=".event_detail">
+
+    <TextView
+        android:id="@+id/eventTitle"
+        android:layout_width="171dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/roundtext"
+        android:gravity="center_horizontal"
+        android:text="Title"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/joinButton"
+        android:layout_width="100dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/roundbutton"
+        android:text="Join"
+        app:layout_constraintBottom_toTopOf="@+id/viewComments"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/hostPicture"
+        android:layout_width="122dp"
+        android:layout_height="121dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ripped_slug" />
+
+    <TextView
+        android:id="@+id/eventDescription"
+        android:layout_width="350dp"
+        android:layout_height="154dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/roundtext"
+        android:gravity="center_horizontal"
+        android:text="Description"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.WindowTitle"
+        app:layout_constraintBottom_toTopOf="@+id/joinButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventLocation" />
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="83dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="16dp"
+        android:text="Location:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/eventDescription"
+        app:layout_constraintEnd_toStartOf="@+id/eventLocation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/eventLocation" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="48dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="12dp"
+        android:text="Date:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/eventDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.345"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hostPicture" />
+
+    <TextView
+        android:id="@+id/eventLocation"
+        android:layout_width="251dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/roundtext"
+        android:gravity="center"
+        android:text="Location"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.WindowTitle"
+        app:layout_constraintBottom_toTopOf="@+id/eventDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvLocation"
+        app:layout_constraintTop_toBottomOf="@+id/eventTime"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="102dp"
+        android:layout_marginRight="102dp"
+        android:layout_marginTop="33dp"
+        android:text="Time:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventTitle" />
+
+    <TextView
+        android:id="@+id/eventDate"
+        android:layout_width="113dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/roundtext"
+        android:gravity="center"
+        android:text="Date"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.WindowTitle"
+        app:layout_constraintEnd_toStartOf="@+id/eventTime"
+        app:layout_constraintTop_toBottomOf="@+id/tvDate" />
+
+    <TextView
+        android:id="@+id/eventTime"
+        android:layout_width="130dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/roundtext"
+        android:gravity="center"
+        android:text="Time"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.WindowTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTime" />
+
+    <Button
+        android:id="@+id/leaveActivity"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/roundbutton"
+        android:text="Leave Event"
+        app:layout_constraintBottom_toTopOf="@+id/viewComments"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/viewComments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:gravity="center"
+        android:text="Post/View Comments (0)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Notification.Title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!--  <Button
+          android:id="@+id/btncancel"
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="46dp"
+          android:layout_marginEnd="16dp"
+          android:layout_marginRight="16dp"
+          android:background="@drawable/roundbutton"
+          android:text="Cancel"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent" /> -->
+
+</android.support.constraint.ConstraintLayout>
